@@ -5,21 +5,21 @@
 class Riff < Formula
   desc "Disposable, throwaway project workspaces"
   homepage "https://github.com/torryt/riff"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/torryt/riff/releases/download/v0.1.14/riff_darwin_amd64.tar.gz"
-      sha256 "5cca310f65d61d0659623bbc074aade47718ecbfd72da5d7edcb4a3d10705cdc"
+      url "https://github.com/torryt/riff/releases/download/v0.1.15/riff_darwin_amd64.tar.gz"
+      sha256 "adb58dcfa9e77dc3138a1071e5ceb24536b957d59572721b0909ba62e0cc5ee5"
 
       define_method(:install) do
         bin.install "riff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/torryt/riff/releases/download/v0.1.14/riff_darwin_arm64.tar.gz"
-      sha256 "16711dec6754021d104d3580008bff0ceb6ced17595a0b881b6b6f3e48164629"
+      url "https://github.com/torryt/riff/releases/download/v0.1.15/riff_darwin_arm64.tar.gz"
+      sha256 "4cd7f170ccc9ea26362c66c620aaf5edfe470c8abea2e3f95cc64e0df3847a25"
 
       define_method(:install) do
         bin.install "riff"
@@ -29,15 +29,15 @@ class Riff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/torryt/riff/releases/download/v0.1.14/riff_linux_amd64.tar.gz"
-      sha256 "c95cc7ae4c37a1ccd80799f5abd20b9df1919cd31082acb04e1c4d93eacf8073"
+      url "https://github.com/torryt/riff/releases/download/v0.1.15/riff_linux_amd64.tar.gz"
+      sha256 "c4094bca06d611edd10306750f43b985e133b1c29b3d89a10e2b8fe67558f694"
       define_method(:install) do
         bin.install "riff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/torryt/riff/releases/download/v0.1.14/riff_linux_arm64.tar.gz"
-      sha256 "ab891000d2b9425325aa7f2ad0f128a4b9cfe7b43229232658ae5d13d4a75341"
+      url "https://github.com/torryt/riff/releases/download/v0.1.15/riff_linux_arm64.tar.gz"
+      sha256 "7efd777fc10b2f80bc562774cdb5534ed18e575bd09b7439c5fc3e655c2ddc54"
       define_method(:install) do
         bin.install "riff"
       end
